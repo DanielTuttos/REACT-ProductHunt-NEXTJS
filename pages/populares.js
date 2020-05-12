@@ -1,14 +1,14 @@
 import Layout from '../components/layout/Layout';
 import React from 'react';
 
-import useProductos from '../hooks/useProductos';
-
 import DetalleProducto from '../components/layout/DetallerProducto';
 
+import useProductos from '../hooks/useProductos';
 
-const Home = () => {
 
-  const { productos } = useProductos('creado');
+const Populares = () => {
+
+  const { productos } = useProductos('votos');
 
   return (
     <div className="container">
@@ -32,4 +32,5 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Populares
+
