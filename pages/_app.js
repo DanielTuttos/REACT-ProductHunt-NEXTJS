@@ -7,6 +7,7 @@ const MyApp = (props) => {
 
     const { Component, pageProps } = props;
 
+    // agregando comentario antes del return
     return (
         <FirebaseContext.Provider
             value={{
